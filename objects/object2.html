@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="car1"></h1>
+   <h1 id="car2"></h1>
+
+   <input type="text" id="demo" onchange="copy()" >
+
+   <h3 id="name"></h3>
+    <script>
+        function copy(){
+            let name = document.getElementById("demo").value;
+            document.getElementById("name").innerHTML = name
+        }
+
+
+        // object
+        let car1 = {
+            category: "Family Car",
+            brand: "Maruti Suzuki",
+            model: "Alto K10",
+            type: "petrol"
+        }
+        let car2 = {
+            category: "SUV",
+            brand: "Toyota",
+            model: "Fortuner",
+            type: "diesel"
+        }
+
+        document.getElementById("car1").innerHTML = `The cars category is: ${car1.category} <br> The car brand is: ${car1.brand} <br> The car model is: ${car1.model} <br>
+        The car type is: ${car1.type}` 
+        
+
+    </script>
+</body>
+</html>

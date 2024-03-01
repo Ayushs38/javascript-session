@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>documet</title>
+  </head>
+  <body>
+    <div>
+      <form action="" onsubmit="displaydata(event)">
+        <label for="firstname">Enter First Name</label>
+        <input type="text" id="firstname" name="firstname" />
+        <br />
+        <br />
+        <label for="lastname">Enter Last Name</label>
+        <input type="text" id="lastname" name="lastname" />
+        <br />
+        <br />
+        <label for="Email">Enter Your Email</label>
+        <input type="text" id="Email" name="Email" />
+        <br />
+        <br />
+        <input type="submit" />
+      </form>
+
+      <div>
+        <h1>Profile</h1>
+        <h3>
+          First Name Is:<span
+            id="firstname-display"
+            style="color: orange"
+          ></span>
+        </h3>
+        <h3>
+          Last Name Is:<span id="lastname-display" style="color: orange"></span>
+        </h3>
+        <h3>Email Is:<span id="Email-display" style="color: orange"></span></h3>
+      </div>
+    </div>
+    <script>
+      function displaydata(event) {
+        // alert("jhbhkjhkh")
+        // console.log("hiiiiiiiiiiii")
+        event.preventDefault();
+        let firstname = document.getElementById("firstname").value;
+       
+        let lastname = document.getElementById("lastname").value;
+       
+        
+        document.getElementById("firstname-display").textContent = firstname;
+        document.getElementById("lastname-display").textContent = lastname;
+      }
+    </script>
+  </body>
+</html>

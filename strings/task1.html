@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="original-input" placeholder="Enter the string">
+    <input type="text" id="index" placeholder="Enter the index">
+    <input type="text" id="replace-letter" placeholder="Enter the replace letter">
+    <button onclick="replaceLetter()">Submit</button>
+
+    <h1 id="original"></h1>
+    <h1 id="replaced-string"></h1>
+
+    <script>
+        function replaceLetter(){
+            // 3
+            // let str = "Ayush is Great"
+            let original = document.getElementById("original-input").value;
+            let index = document.getElementById("index").value; 
+            let replace_letter = document.getElementById("replace-letter").value; //r 
+            let replaced_string = "";
+            replaced_string = original.substring(0, index)+ replace_letter + original.substring(index+1, original.length); 
+            
+            document.getElementById("original").innerHTML = original;
+            document.getElementById("replaced-string").innerHTML = replaced_string;
+
+        }
+    </script>
+</body>
+</html>

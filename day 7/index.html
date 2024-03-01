@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" onkeyup="myFunction()" />
+    <h1 id="demo"></h1>
+    <script>
+      function myFunction() {
+        let number = document.getElementById("input").value;
+        document.getElementById("demo").innerHTML = number;
+      }
+
+
+        // function
+        // simple --- default function
+        function subtraction() {
+          let a = 10;
+          let b = 7;
+          let add = a + b;
+          // return add;
+          document.getElementById("num").innerHTML = "Subtraction =" + sub;
+        }
+//  parameter vala function - parameterized fucntion
+
+        function additionNumber(a, b) {
+          return a + b;
+        }
+      //   function myFunction(){
+      //     let a = 10;
+      //     let b = 7;
+      //     let add = a + b;
+      //     document.getElementById("demo").innerHTML = "Addition =" + add;
+      //   }
+
+      //   myFunction();
+      //
+
+      //   function subtractNumber(a, b) {
+      //     return a - b;
+      //   }
+
+      //   let addition = additionNumber( 10 , 5)
+
+      //   let sub = subtractNumber(10 ,4)
+
+      //   document.getElementById("demo").innerHTML = "Addition =" + addition;
+      //   document.getElementById("num").innerHTML = "Subtraction =" + sub;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo">
+      <form>
+        <input type="text" placeholder="Head" id="Head" />
+        <input type="text" placeholder="subheading" id="subHead" />
+
+        <input type="text" placeholder="description" id="description" />
+        <button onclick="myFunction(event)">Submit</button>
+      </form>
+    </div>
+
+    
+    <!-- <div id="root"></div> -->
+
+    <script>
+      function myFunction(event) {
+        event.preventDefault();
+        let head = document.getElementById("Head").value;
+        let subHead = document.getElementById("subHead").value;
+        let description = document.getElementById("description").value;
+
+        document.getElementById("demo").innerHTML = `
+        <div>
+            <h1>${head}</h1>
+            <h3>${subHead}</h3>
+            <p>${description}</p>
+        </div>
+        `;
+      }
+    </script>
+  </body>
+</html>

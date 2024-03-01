@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" onchange="myfunction()">
+    <h1 id="length"></h1>
+    <h1 id="char-at"></h1>
+
+
+    <script>
+        function myfunction(){
+            let name = document.getElementById("name").value
+            let length = name.length;
+            document.getElementById("length").innerHTML = `The length of input is: ${length}`
+            document.getElementById("char-at").innerHTML = ` The charAt: ${name.charAt(6)}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+ </head>
+ <style>
+     *{
+        margin: 0;
+        padding: 0;
+     }
+     .main-grid{
+        /* margin: 20px; */
+        width: 1240px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+     }
+     img{
+        border-radius: 25px;
+        margin-top: 100px;
+     }
+     button {
+        padding: 12px 0px;
+        margin-top: 14px;
+        width: 12%;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
+        background-color: teal;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 24px;
+        font-family: "Nova Square", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+     }       
+ </style>
+ <body>
+     <button onclick="myFunction()">Click</button>
+     <div id="root"></div>
+     <script>
+         let condition = true;     
+         function myFunction() {
+         
+         if (condition) {
+         document.getElementById("root").innerHTML =`<div class="main-grid">
+          <div class="flex-one">
+             <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100%">
+          </div>
+          <div class="flex-two">
+            <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNwb3J0c3xlbnwwfHwwfHx8MA%3D%3D" alt="" width="100%">
+          </div>
+         </div>`
+         condition = false;
+         
+         }
+         else {
+            document.getElementById("root").innerHTML =`<div class="main-grid">
+          <div class="flex-one">
+            <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNwb3J0c3xlbnwwfHwwfHx8MA%3D%3D" alt="" width="100%">
+          </div>
+          <div class="flex-two">
+             <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100%">
+          </div>
+         </div>`
+         condition = true;
+         }
+
+          }         
+     </script>
+ </body>
+</html>
