@@ -1,0 +1,41 @@
+.button-bar{
+  padding: 10px;
+  width: auto;
+}
+button{
+  padding: 5px;
+  border-radius: 20px;
+  width: 100px;
+  font-weight: bolder;
+  border: none;
+
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.c-red{
+  background-color: red;
+
+}
+
+.c-blue{
+  background-color: blue;
+}
+
+.c-yellow{
+  background-color: yellow;
+}
+
+.c-violet{
+  background-color: violet;
+}
+
+.c-green{
+  background-color: green;
+}
+
+.c-orange{
+  background-color: orange;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .parent{
+      display: grid;
+   grid-template-columns: 1fr 1fr;
+    }
+    img{
+      width: 100%;
+    }
+  </style>
+  <body>
+    
+    <div id="root"></div>
+    
+
+    <script>
+      let condition = false;
+      if(condition){ // true
+        document.getElementById("root").innerHTML = `
+        <div class="parent">
+          <div>
+            <h1>Title </h1>
+            <h3>Subtitle </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus mollitia, libero, neque amet ab voluptate nihil accusantium itaque nulla magnam cumque provident nisi assumenda corporis, modi quasi ipsum voluptates!</p>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+      </div>
+        `
+      }else{
+        document.getElementById("root").innerHTML = `
+        <div class="parent">
+          <div>
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            
+          </div>
+          <div>
+            <h1>Title </h1>
+            <h3>Subtitle </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus mollitia, libero, neque amet ab voluptate nihil accusantium itaque nulla magnam cumque provident nisi assumenda corporis, modi quasi ipsum voluptates!</p>
+          </div>
+      </div>
+        `
+      }
+    </script>
+  </body>
+</html>

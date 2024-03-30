@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Enter String" >
+    <input type="text" id="num" placeholder="enter index">
+    <input type="text" id="change-to" placeholder="change character to:">
+    <button type="submit" id="submit" onclick="getString()">Submit</button>
+    <h1 id="original"></h1>
+    <h1 id="new"></h1>
+
+
+    <script>
+        function getString(){
+            let original = document.getElementById("input").value;
+            document.getElementById("original").innerHTML = original;
+            document.getElementById("new").innerHTML = changeString();
+        }
+        function changeString(){
+            let original = document.getElementById("input").value;
+            let number = parseInt(document.getElementById("num").value) ;
+            let changeTo = document.getElementById("change-to").value;
+                                         
+            let modifiedString = original.substring(0, number) + changeTo + original.
+            
+            substring(number + 1);
+            
+            return modifiedString;
+            
+        }
+    </script>
+</body>
+</html>
